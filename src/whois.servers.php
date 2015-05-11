@@ -61,7 +61,7 @@ return array(
 'WHOIS_PARAM' => array(
     'com.whois-servers.net' => 'domain =$',
     'net.whois-servers.net' => 'domain =$',
-    'de.whois-servers.net'  => '-T dn,ace $',
+    'whois.denic.de' => '-T dn,ace $',
     'jp.whois-servers.net'  => 'DOM $/e',
 ),
 

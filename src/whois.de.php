@@ -64,7 +64,9 @@ class de_handler {
         if (!isset($r['regrinfo']['domain']['status']) || $r['regrinfo']['domain']['status'] == "free") {
             $r['regrinfo']['registered'] = 'no';
         } else {
-            $r['regrinfo']['domain']['changed'] = substr($r['regrinfo']['domain']['changed'], 0, 10);
+            if (isset($r['regrinfo']['domain']['changed'])) {
+                $r['regrinfo']['domain']['changed'] = substr($r['regrinfo']['domain']['changed'], 0, 10);
+            }
             $r['regrinfo']['registered'] = 'yes';
         }
         return $r;
